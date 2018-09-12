@@ -1,0 +1,47 @@
+{
+  "name": "@dokuhero/react-native-theme",
+  "version": "0.0.0",
+  "description": "Theme and stylesheet manager for ReactNative.",
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
+  "files": [
+    "dist",
+    "typings"
+  ],
+  "scripts": {
+    "lint": "tslint 'src/**/*.ts{,x}'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -d --declarationDir ./typings",
+    "build": "rm -rf typings && rm -rf dist && npm run compile && prettier ./typings/**/*.d.ts --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dokuhero/react-native-theme.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "theme"
+  ],
+  "author": "Budi Adiono <budiadiono@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dokuhero/react-native-theme/issues"
+  },
+  "homepage": "https://github.com/dokuhero/react-native-theme#readme",
+  "dependencies": {
+    "deepmerge": "^2.1.1",
+    "react-native-extended-stylesheet": "^0.9.0"
+  },
+  "devDependencies": {
+    "@types/deepmerge": "^2.1.0",
+    "@types/react": "16.4.7",
+    "@types/react-native": "^0.56.18",
+    "prettier": "^1.14.2",
+    "react": "^16.5.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
+  }
+}
