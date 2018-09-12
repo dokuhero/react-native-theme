@@ -1,6 +1,6 @@
 {
   "name": "@dokuhero/react-native-theme",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Theme and stylesheet manager for ReactNative.",
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",
