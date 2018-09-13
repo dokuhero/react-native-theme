@@ -14,13 +14,26 @@ export interface ThemeColors {
   semiTransparent: string
   primary: string
   secondary: string
-  white: string
-  darker: string
-  dark: string
-  lighter: string
-  danger: string
+  success: string
   warning: string
+  danger: string
+  white: string
   grey: string
+  light: string
+  lighter: string
+  dark: string
+  darker: string
+  primaryReverse: string
+  secondaryReverse: string
+  successReverse: string
+  warningReverse: string
+  dangerReverse: string
+  whiteReverse: string
+  greyReverse: string
+  lightReverse: string
+  lighterReverse: string
+  darkReverse: string
+  darkerReverse: string
   [extraColor: string]: string
 }
 
