@@ -7,11 +7,12 @@ import { Theme, WithThemeProps } from './types'
  * Create new theme by override default theme values.
  * @param themes themes to be merged
  */
-export function createTheme<T>(...themes: Array<Partial<T | Theme>>) {
-  let theme: Partial<T | Theme> = {}
+export function createTheme<T>(...themes: Array<Partial<T & Theme>>) {
+  let theme: Partial<T & Theme> = {}
   if (themes.length) {
     for (const thm of themes) {
       theme = deepmerge(theme, thm)
+      theme.mapStyle = thm.mapStyle
     }
   }
 
