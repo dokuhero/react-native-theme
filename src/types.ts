@@ -55,6 +55,12 @@ export interface FontSizes {
   big: number
 }
 
+export interface FontNames {
+  regular: string
+  semiBold: string
+  bold: string
+}
+
 export interface Theme {
   /**
    * Theme unique id
@@ -85,6 +91,11 @@ export interface Theme {
    * Font sizes
    */
   fontSize: Partial<FontSizes>
+
+  /**
+   * Font names
+   */
+  fontName: Partial<FontNames>
 
   /**
    * Generate map with https://mapstyle.withgoogle.com/

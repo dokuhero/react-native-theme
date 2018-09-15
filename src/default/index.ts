@@ -12,5 +12,6 @@ export const defaultTheme: Theme = {
   space,
   radius,
   fontSize,
-  mapStyle
+  mapStyle,
+  fontName: {}
 }
