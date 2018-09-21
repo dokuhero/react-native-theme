@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native'
 // @ts-ignore
 import EStyleSheet from 'react-native-extended-stylesheet'
 import { ColorKeys } from './default/color'
+import { FontNameKeys } from './default/fontName'
 import { FontSizesKeys } from './default/fontSize'
 import { RadiusKeys } from './default/radius'
 import { SpaceKeys } from './default/space'
@@ -13,7 +14,14 @@ import { Theme } from './types'
  * event/hook when theme get changed.
  * @param theme Theme
  */
-export function buildStyleSheet({ id, color, space, radius, fontSize }: Theme) {
+export function buildStyleSheet({
+  id,
+  color,
+  space,
+  radius,
+  fontSize,
+  fontName
+}: Theme) {
   EStyleSheet.build({
     $theme: id,
     [ColorKeys.transparent]: color.transparent,
@@ -48,7 +56,10 @@ export function buildStyleSheet({ id, color, space, radius, fontSize }: Theme) {
     [RadiusKeys.small]: radius.small,
     [FontSizesKeys.small]: fontSize.small,
     [FontSizesKeys.medium]: fontSize.medium,
-    [FontSizesKeys.big]: fontSize.big
+    [FontSizesKeys.big]: fontSize.big,
+    [FontNameKeys.regular]: fontName.regular,
+    [FontNameKeys.bold]: fontName.bold,
+    [FontNameKeys.semiBold]: fontName.semiBold
   })
 }
 
